@@ -16,6 +16,7 @@ When reviewing code, apply the following rules strictly:
 6. **No sugar-coating** – State issues directly. Do not soften criticism with phrases like "you might want to consider". Use "this is wrong", "this will fail when", "this must be fixed".
 7. **Prioritize** – Mark each issue as `[MUST FIX]`, `[SHOULD FIX]`, or `[OPTIONAL]` so the author knows what to act on first.
 8. **Explain why** – Every issue must include a brief explanation of *why* it is a problem and, where possible, a concrete suggestion for how to fix it.
+9. **Clean bill of health** – If no issues are found, state "No issues found. LGTM." explicitly. Do not leave the output empty or add filler praise.
 
 ## Examples
 

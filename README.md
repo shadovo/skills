@@ -46,9 +46,12 @@ mkdir -p .github
 curl -fsSL https://raw.githubusercontent.com/shadovo/skills/main/harsh-code-review/SKILL.md \
   > /tmp/skill.md
 
-# append to existing instructions with a blank-line separator, then clean up
-echo "" >> .github/copilot-instructions.md
+# add a blank-line separator only when appending to an existing non-empty file
+if [ -s .github/copilot-instructions.md ]; then
+  echo "" >> .github/copilot-instructions.md
+fi
 cat /tmp/skill.md >> .github/copilot-instructions.md
+rm /tmp/skill.md
 ```
 
 ---
@@ -66,7 +69,7 @@ One-sentence description of what this skill makes the agent do.
 ## Instructions
 Step-by-step or rule-based instructions the agent must follow.
 
-## Examples (optional)
+## Examples
 Concrete before/after examples that illustrate the skill in action.
 ```
 
@@ -84,7 +87,7 @@ Concrete before/after examples that illustrate the skill in action.
 
 | Skill | Description |
 |-------|-------------|
-| [harsh-code-review](./harsh-code-review/SKILL.md) | Instructs the agent to perform a thorough, uncompromising code review that prioritizes correctness, readability, and maintainability. |
+| [harsh-code-review](./harsh-code-review/SKILL.md) | Instructs the agent to perform a thorough, uncompromising code review that prioritizes correctness, security, readability, and maintainability. |
 
 ---
 
