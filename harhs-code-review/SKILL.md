@@ -19,6 +19,9 @@ Harshly review this PR. Do not hold back — suggest large refactors or rewrites
 10. Check for proper error handling
 11. Make sure docs and copilot instructions are up to date
 12. Evaluate what became better and what became worse in this PR
+13. Linting: `npm run lint` — must pass with 0 errors and 0 warnings.
+14. Type checking: `npm run check` — must pass with no type errors.
+15. Tests: `npm run test` — all tests must pass.
 
 Always provide constructive, specific feedback with line references where applicable.
 
@@ -32,15 +35,4 @@ After completing the review, also implement the fixes for all issues identified:
 4. Update or add tests to cover the changes made.
 5. Update any relevant docs or Copilot instructions affected by the fix.
 6. Ensure all fixes align with the project's coding standards and long-term direction.
-7. After implementing, do a final pass to confirm no new issues were introduced.
-
-## Validation
-
-After implementing all fixes, run the following to confirm nothing is broken:
-
-1. **Linting**: `npm run format && npm run lint` — must pass with 0 errors and 0 warnings.
-2. **Type checking**: `npm run check` — must pass with no type errors.
-3. **Unit tests**: `npm run test:unit -- --run` — all tests must pass.
-4. **E2E tests**: `npm run test:e2e` — all Playwright tests must pass.
-
-Fix any failures before considering the review complete.
+7. After implementing, do a final pass to confirm no new issues were introduced and tests are passing.
