@@ -18,10 +18,10 @@ Harshly review this PR. Do not hold back — suggest large refactors or rewrites
 9. Review naming conventions and code readability
 10. Check for proper error handling
 11. Make sure docs and copilot instructions are up to date
-12. Evaluate what became better and what became worse in this PR
-13. Linting: `npm run lint` — must pass with 0 errors and 0 warnings.
-14. Type checking: `npm run check` — must pass with no type errors.
-15. Tests: `npm run test` — all tests must pass.
+12. Linting: `npm run lint` — must pass with 0 errors and 0 warnings.
+13. Type checking: `npm run check` — must pass with no type errors.
+14. Tests: `npm run test` — all tests must pass.
+15. Evaluate what became better and what became worse in this PR
 
 Always provide constructive, specific feedback with line references where applicable.
 
